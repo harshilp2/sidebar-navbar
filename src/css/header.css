@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+}
+.headerContainer {
+  background-color: #f3f4f6;
+}
+
+.firstAlertTopContiner {
+  width: 100%;
+  padding: 1.5rem;
+}
+.topAlertContainer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 112px;
+  box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
+  padding: 0.75rem 1.4rem;
+}
+
+.alertText {
+  color: #4d5761;
+  margin: 0px;
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.clickHereText {
+  color: #1e56e3;
+  cursor: pointer;
+}
