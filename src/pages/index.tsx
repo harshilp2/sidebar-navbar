@@ -6,7 +6,12 @@ import Footer from "@theme/Footer";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import { Header } from "../components/header";
+import React from "react";
+import { TopAlert } from "../components/header/topAlert";
+import "../css/header.css";
+import SearchBar from "@theme/SearchBar";
+import { Logo } from "../components/icons/logo";
+import { DocsSvg, RightArrow } from "../components/icons";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -33,15 +38,31 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <>
-      {/* <Layout> */}
-      {/* <HomepageHeader /> */}
-      <Header />
+    <Layout>
+      <HomepageHeader />
       <main>
+        <div className="headerContainer">
+          <TopAlert />
+          <div className="navBarContainer">
+            <div className="navBarFirstSection">
+              <Logo />
+              <DocsSvg />
+            </div>
+            <div className="navBarSecondSection">
+              <SearchBar />
+            </div>
+            <div className="navBarLastSection">
+              <button className="outlinedBtn">Hasura.io</button>
+              <button className="outlinedBtn">Testomonials</button>
+              <button className="primaryBtn">
+                Log in <RightArrow />
+              </button>
+            </div>
+          </div>
+        </div>
+
         <HomepageFeatures />
       </main>
-      <Footer />
-      {/* </Layout> */}
-    </>
+    </Layout>
   );
 }

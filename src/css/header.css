@@ -31,3 +31,30 @@
   color: #1e56e3;
   cursor: pointer;
 }
+
+.navBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 48px;
+}
+
+.navBarFirstSection {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navBarLastSection {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navBarSecondSection {
+  width: 350px;
+}
+.alertDeleteIcon {
+  cursor: pointer;
+}
