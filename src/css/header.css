@@ -58,3 +58,70 @@
 .alertDeleteIcon {
   cursor: pointer;
 }
+
+.dropDown {
+  position: relative;
+}
+
+.selectedDropDown {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+
+  color: #6c737f;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px 4px 16px;
+}
+
+.dropDownListContainer {
+  position: absolute;
+  left: 50%;
+  height: fit-content;
+  top: 0px;
+  padding-top: 40px;
+
+  transform: translateX(-50%);
+  width: 120px;
+}
+
+.dropDownValuesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dropDownValuesContainer > *:not(:last-child) {
+  box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
+}
+
+.dropDownValue {
+  border-bottom: 1px;
+  width: 100%;
+  padding: 4px 16px 4px 16px;
+  color: black;
+  /* border-color: #6c737f; */
+}
+
+.selectedOption {
+  color: #1e56e3;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dropDownAndBtn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 0px 40px;
+}

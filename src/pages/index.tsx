@@ -12,6 +12,7 @@ import "../css/header.css";
 import SearchBar from "@theme/SearchBar";
 import { Logo } from "../components/icons/logo";
 import { DocsSvg, RightArrow } from "../components/icons";
+import { DropDown } from "../components/header/dropdown";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -45,8 +46,11 @@ export default function Home(): JSX.Element {
           <TopAlert />
           <div className="navBarContainer">
             <div className="navBarFirstSection">
-              <Logo />
-              <DocsSvg />
+              <Logo /> <DocsSvg />
+              <div className="dropDownAndBtn">
+                <button className="outlinedBtn">Tuturials</button>
+                <DropDown />
+              </div>
             </div>
             <div className="navBarSecondSection">
               <SearchBar />
