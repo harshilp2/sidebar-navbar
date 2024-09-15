@@ -62,7 +62,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   outline: inherit;
-  background-color: #3970fd;
+  background-color: #EC5800;
   border-radius: 48px;
   padding: 8px 12px;
   padding-left: 1.5rem;
@@ -71,3 +71,28 @@
   justify-content: center;
   color: white;
 }
+
+aside {
+  background-color: #f3f4f6;
+}
+
+.askAIbtn {
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  outline: inherit;
+  background-color: #979797;
+  border-radius: 15px;
+  padding: 4px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  color: white;
+  white-space: nowrap;
+  min-width: fit-content;
+  text-align: center;
+}
+
+

@@ -3,9 +3,13 @@
 }
 .headerContainer {
   background-color: #f3f4f6;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .firstAlertTopContiner {
+  display: block;
   width: 100%;
   padding: 1.5rem;
 }
@@ -15,6 +19,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+  z-index: 100;
   border-radius: 112px;
   box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
   padding: 0.75rem 1.4rem;
@@ -28,7 +34,7 @@
 }
 
 .clickHereText {
-  color: #1e56e3;
+  color: #EC5800;
   cursor: pointer;
 }
 
@@ -52,8 +58,16 @@
   gap: 28px;
 }
 
+.navElements {
+  display: flex;
+  gap: 15px; /* Space between the search bar and button */
+  align-items: center; /* Vertically align elements */
+}
+
 .navBarSecondSection {
-  width: 350px;
+  width: 450px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
 }
 .alertDeleteIcon {
   cursor: pointer;
@@ -100,7 +114,7 @@
 }
 
 .dropDownValuesContainer > *:not(:last-child) {
-  box-shadow: 0 1px 2px 0 #1c263f0f, 0 1px 3px 0 #1c263f1a;
+  box-shadow: 0 1px 2px 0 #EC5800, 0 1px 3px 0 #1c263f1a;
 }
 
 .dropDownValue {
@@ -112,7 +126,7 @@
 }
 
 .selectedOption {
-  color: #1e56e3;
+  color: #EC5800;
 }
 
 .pointer {
@@ -124,4 +138,62 @@
   gap: 15px;
   align-items: center;
   margin: 0px 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .mobileHeader {
+    display: flex;
+    background-color: #f3f4f6;
+    flex-direction: column;
+    padding: 16px;
+    gap: 24px;
+  }
+  .firstAlertTopContiner {
+    display: none;
+  }
+  .topAlertMobileContainer {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 4px;
+    background-color: white;
+  }
+  .mobileAlertText {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileNavbar {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobileAlertContainer {
+    padding: 1.5rem;
+    background-color: #f3f4f6;
+  }
+  .navBarContainer {
+    display: none;
+  }
+  .mobileNavbarFirstSection {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    gap: 3px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobileAlertContainer {
+    display: none;
+  }
+  .mobileNavbar {
+    display: none;
+  }
+}
+
+.customSearchBar {
+  width: 100%;
+  height: 50px; /* Set your desired height */
 }
