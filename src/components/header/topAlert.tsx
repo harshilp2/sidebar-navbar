@@ -27,11 +27,10 @@ export const TopAlert = () => (
             <div className="topAlertMobileContainer">
               <div className="mobileAlertText">
                 <p className="alertText">
-                  This is the documentation for Hasura DDN, the future of data
-                  delivery.
+                Callout.
                   <span className="clickHereText">
                     {" "}
-                    Click here for the Hasura v2.x docs.
+                    Callout.
                   </span>
                 </p>
               </div>
@@ -46,11 +45,10 @@ export const TopAlert = () => (
                 <DeleteIcon className="alertDeleteIcon" />
               </span>
               <p className="alertText">
-                This is the documentation for Hasura DDN, the future of data
-                delivery.
+               Callout
                 <span className="clickHereText">
                   {" "}
-                  Click here for the Hasura v2.x docs.
+                  Callout.
                 </span>
               </p>
               <div></div>

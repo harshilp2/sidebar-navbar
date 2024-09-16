@@ -95,4 +95,53 @@ aside {
   text-align: center;
 }
 
+.buttonAI {
+  width: 110px;
+  height: 36px; /* Adjust height to align with text and icon properly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between the icon and the text */
+  background: linear-gradient(135deg, #0f0c29, #2e4d7a); /* Gradient background */
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 500; /* Adjust font weight */
+  font-size: 14px; /* Adjust font size */
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding: 0 10px; /* Left and right padding */
+  margin-left: 15px; /* Space from the left */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  text-align: center; /* Center text horizontally */
+}
 
+.buttonAI:hover {
+  background: linear-gradient(135deg, #0f0c29, #3a628e); /* Lighter gradient on hover */
+  transition-duration: 0.5s;
+}
+
+.buttonAI:active {
+  transform: scale(0.97);
+}
+
+.buttonAI:hover .svgIcon {
+  transform: rotate(90deg); /* Adjust the rotation */
+  transition-duration: 0.5s;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center; /* Vertically center icon and text */
+  gap: 6px; /* Gap between the icon and text */
+  height: 100%; /* Ensure the container takes up full height of the button */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.svgIcon {
+  height: 20px; /* Ensure the size of the icon */
+  fill: #ffffff; /* Icon color */
+  transition: transform 0.5s; /* Smooth transition for rotation */
+}

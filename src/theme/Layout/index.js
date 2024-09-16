@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme-original/Layout";
 import { TopAlert } from "@site/src/components/header/topAlert";
 import { Logo } from "@site/src/components/icons/logo";
-import { DocsSvg, AIlogo, MenuIcon, RightArrow } from "@site/src/components/icons";
+import { DocsSvg, AIlogo, ExploreButton, MenuIcon, RightArrow } from "@site/src/components/icons";
 import { DropDown } from "@site/src/components/header/dropdown";
 import SearchBar from "@theme/SearchBar";
 import BrowserOnly from "@docusaurus/BrowserOnly";
@@ -35,13 +35,11 @@ export default function LayoutWrapper(props) {
             </div>
             <div className="navBarSecondSection">
               <SearchBar />
-              <button className="askAIbtn">
-                Ask AI
-                <AIlogo />
-              </button>
+              <button className="buttonAI"> <ExploreButton/>
+                </button>
             </div>
             <div className="navBarLastSection">
-              <button className="outlinedBtn">Hasura.io</button>
+              <button className="outlinedBtn">More</button>
               <button className="outlinedBtn">Testimonials</button>
               <button className="primaryBtn">
                 Log in <RightArrow />
